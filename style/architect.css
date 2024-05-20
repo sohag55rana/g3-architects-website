@@ -114,6 +114,13 @@ main{
     font-size: 45px;
     font-weight: 700;
 }
+/* facts section here */
+.section-title{
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
 /* responsive media queries */
 
 /* mobile device */
