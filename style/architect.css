@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 /* header style here */
@@ -21,6 +20,9 @@ nav{
     /* 16px = 1rem */
     font-weight: 700;
     text-align: center;
+}
+.nav-link{
+    padding-top: 35px;
 }
 nav > ul{
     display: flex;
@@ -73,11 +75,65 @@ nav li a{
     width: 100%;
     margin-top: 0;
 }
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+    max-width: 468px;
+}
+.quick{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
 /* responsive media queries */
 
+/* mobile device */
 @media screen and (max-width:576px) {
     header{
-        padding: 0px;
+        padding: 20px;
+    }
+    nav li{
+        padding-bottom: 10px;
+    }
+    nav  
+    {
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding: 50px;
+    }
+    nav
+    {
+        flex-direction: column;
     }
 }
