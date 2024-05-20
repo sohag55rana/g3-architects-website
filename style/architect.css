@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* sheared tag */
 body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+.text-light-gray{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 0;
 }
 /* header style here */
 header{
@@ -52,14 +60,7 @@ nav li a{
     margin-top: 116px;
     margin-bottom: 0;
 }
-.banner-description{
-    color: rgb(114, 114, 114);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 0;
-}
+
 .btn-primary{
     padding: 20px 25px;
     border-radius: 8px;
@@ -75,10 +76,12 @@ nav li a{
     width: 100%;
     margin-top: 0;
 }
+/* main section here */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70PX auto;
 }
+/* teams section here */
 .teams-container{
     display: flex;
     align-items: center;
@@ -121,9 +124,16 @@ main{
     nav li{
         padding-bottom: 10px;
     }
-    nav  
+    nav,.teams-container 
     {
         flex-direction: column;
+    }
+    .teams-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -132,7 +142,7 @@ main{
     header{
         padding: 50px;
     }
-    nav
+    nav,.teams-container 
     {
         flex-direction: column;
     }
