@@ -200,7 +200,14 @@ main{
 .sponsors-img-container img{
     width: 165px;
 }
-
+/* footer section here */
+footer{
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    padding: 39px 410px;
+    margin: 240px;
+    text-align: center;
+}
 /* responsive media queries */
 
 /* mobile device */
@@ -242,6 +249,10 @@ main{
         position: static;
         max-width: 200px;
     }
+    footer {
+        margin: 0;
+        padding: 20px;
+    }
     
 }
 
@@ -256,5 +267,9 @@ main{
     .features-container 
     {
         flex-direction: column;
+    }
+    footer {
+        margin: 0;
+        padding: 20px;
     }
 }
