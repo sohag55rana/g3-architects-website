@@ -138,6 +138,9 @@ main{
     color: rgb(255, 255, 255);
     padding: 45px 40px;
     text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 150px;
 }
 .ten-years-batch h2{
     font-size: 45px;
@@ -146,6 +149,10 @@ main{
 .ten-years-batch p{
     font-size: 25px;
     font-weight: 500;
+}
+.feature-img img{
+    height: 90%;
+    margin-left: 90px;
 }
 /* facts section here */
 .section-title{
@@ -178,6 +185,7 @@ main{
     font-size: 1.25rem;
     font-weight: 600;
 }
+
 /* sponsors section */
 .sponsors-container{
     text-align: center;
@@ -206,7 +214,8 @@ main{
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container 
+    .sponsors-img-container,
+    .features-container 
     {
         flex-direction: column;
     }
@@ -225,6 +234,14 @@ main{
     .facts-card-container .card{
         margin-top: 0;
     }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-batch{
+        position: static;
+        max-width: 200px;
+    }
     
 }
 
@@ -235,7 +252,8 @@ main{
     }
     nav,
     .teams-container,
-    .sponsors-img-container 
+    .sponsors-img-container,
+    .features-container 
     {
         flex-direction: column;
     }
